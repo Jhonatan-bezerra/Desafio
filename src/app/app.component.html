@@ -1,2 +1,34 @@
 
-<router-outlet></router-outlet>
+<mat-toolbar-row class="home">
+    <span>Desafio <mat-icon>extension</mat-icon></span>
+    <span class="example-spacer"></span>     
+</mat-toolbar-row>
+
+
+<mat-tab-group mat-align-tabs="start" class="lista">
+    <mat-tab label="REALIZADAS">
+        <div fxLayout="row" fxLayoutAlign="start center" class="conteudos">
+            <div class="div_conteudo">
+
+                <mat-card class="example-card"
+                fxFlex="0 1 calc(33.3% - 11px)"
+                fxFlex.lt-md="0 1 calc(50% - 11px)"
+                fxFlex.lt-sm="100%">
+                    <mat-card-header>
+                      
+                    </mat-card-header>
+                    <img mat-card-image src="" alt="desafio">
+                    <mat-card-content>
+                      <p>
+                        Olá, Bem vindo!
+                      </p>
+                      <button (click)="obterTodasLista()" mat-raised-button><mat-icon>list</mat-icon> Ver lista</button>
+                    </mat-card-content>
+                   
+                  </mat-card>
+
+            </div>
+            
+        </div>
+    </mat-tab>
+</mat-tab-group>

@@ -14,7 +14,10 @@ export class AppComponent {
   }
 
   obterTodasLista(){
-
+    this.listaSevice.obterTodos()
+      .then(lista => console.log(lista))
+      .catch(error => console.log(error));
+      
   }
   
 
